@@ -25,6 +25,10 @@
 ```text
 codex-gstack-lite/
 ├─ README.md
+├─ LICENSE
+├─ install-to-codex.ps1
+├─ examples/
+│  └─ real-task-scenarios.md
 ├─ skills/
 │  ├─ office-hours/
 │  │  └─ SKILL.md
@@ -111,6 +115,18 @@ codex-gstack-lite/
 - `~/.codex/skills/`
 - 或项目级 `.codex/skills/`
 
+也可以直接运行：
+
+```powershell
+powershell.exe -ExecutionPolicy Bypass -File .\install-to-codex.ps1
+```
+
+如果要装到自定义目录：
+
+```powershell
+powershell.exe -ExecutionPolicy Bypass -File .\install-to-codex.ps1 -TargetRoot "D:\custom\skills"
+```
+
 ## 边界
 
 这不是完整的 `gstack` 搬运版。
@@ -126,6 +142,7 @@ codex-gstack-lite/
 样本见：
 
 - `docs/verification-samples.md`
+- `examples/real-task-scenarios.md`
 
 ## 后续可扩展
 
